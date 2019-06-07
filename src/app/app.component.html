@@ -1,0 +1,8 @@
+
+<div id="mygallery">
+  <a *ngFor="let imagen of imagenes; let i = index" [href]="imagen">
+      <img [alt]=" 'imagen ' + i " [src]="imagen"/>
+  </a>
+</div>
+
+<router-outlet></router-outlet>
